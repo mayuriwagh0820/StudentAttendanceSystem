@@ -1,0 +1,67 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+main {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+input, button {
+    padding: 10px;
+    margin: 6px 4px 6px 0;
+    font-size: 15px;
+}
+
+input {
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+
+button {
+    background: #1d4ed8;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+.student-row, .record-row {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#message {
+    font-weight: bold;
+}

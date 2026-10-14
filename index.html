@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Attendance Management System</h1>
+        <p>Manage students and record daily attendance</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Add Student</h2>
+            <form id="studentForm">
+                <input id="studentName" type="text" placeholder="Student name" required>
+                <input id="studentRoll" type="text" placeholder="Roll number" required>
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Mark Attendance</h2>
+            <label for="attendanceDate">Attendance date:</label>
+            <input id="attendanceDate" type="date" required>
+            <div id="studentList"></div>
+            <button id="saveAttendance">Save Attendance</button>
+            <p id="message" role="status"></p>
+        </section>
+
+        <section class="card">
+            <h2>Attendance Records</h2>
+            <div id="attendanceRecords"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
