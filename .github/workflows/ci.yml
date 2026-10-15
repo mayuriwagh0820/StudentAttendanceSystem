@@ -1,4 +1,5 @@
-﻿name: Student Attendance CI
+﻿
+name: Student Attendance CI
 
 on:
   push:
@@ -28,3 +29,8 @@ jobs:
           test -f style.css
           test -f script.js
           test -f README.md
+          test -f Dockerfile
+          test -f compose.yaml
+
+      - name: Build Docker image
+        run: docker build -t student-attendance:latest .

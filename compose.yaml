@@ -1,0 +1,8 @@
+
+services:
+  attendance:
+    build: .
+    container_name: student-attendance
+    ports:
+      - "8080:80"
+    restart: unless-stopped
